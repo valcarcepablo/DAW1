@@ -1,0 +1,72 @@
+.log-in {
+  width: 50%;
+  float: left;
+}
+
+.sign-up {
+  width: 50%;
+  float: right;
+}
+
+.log-in-container,
+.sign-up-container {
+  width: 40%;
+  background: rgba(152, 106, 38, 0.781);
+  border-radius: 30px;
+}
+.log-in-container {
+  margin-top: 29%;
+  margin-left: 40%;
+  height: 13em;
+}
+.sign-up-container {
+  margin-top: 25%;
+  margin-left: 20%;
+  height: 17em;
+}
+.sign-up-container label,
+.log-in-container label {
+  color: white;
+  font-size: 20px;
+}
+.sign-up-container form,
+.log-in-container form {
+  padding-left: 2.5em;
+  padding-top: 1.8em;
+}
+
+#log-email,
+#log-password,
+#sign-name,
+#sign-email,
+#sign-password {
+  height: 2em;
+  margin-bottom: 3%;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+  padding: 0.1em 0.5em;
+}
+
+#sign-up-button,
+#log-in-button {
+  margin-top: 0.5em;
+  margin-left: 28%;
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  width: 5em;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 0.15em;
+  padding-right: 0.1em;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+#sign-up-button:hover,
+#log-in-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}

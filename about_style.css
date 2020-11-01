@@ -1,0 +1,89 @@
+.about-text {
+  float: left;
+  width: 25%;
+  height: 30em;
+  margin-left: 15%;
+  margin-top: 7%;
+  background: rgba(152, 106, 38, 0.7);
+  border-radius: 30px;
+}
+
+.top-img {
+  position: relative;
+  width: 100%;
+  height: 8em;
+}
+.top-img img {
+  margin-left: 9em;
+  margin-top: 1em;
+}
+
+.left-text {
+  float: left;
+  width: 50%;
+  padding-top: 2em;
+  padding-left: 1em;
+  font-size: 20px;
+}
+.right-text {
+  float: right;
+  width: 50%;
+  padding-top: 2em;
+  padding-right: 1em;
+  font-size: 20px;
+}
+
+.about-form {
+  width: 25%;
+  height: 30em;
+  float: left;
+  margin-left: 20%;
+  margin-top: 7%;
+  background: rgba(152, 106, 38, 0.7);
+  border-radius: 30px;
+}
+
+.about-form form {
+  margin-left: 19%;
+  margin-top: 5%;
+}
+
+#form-name,
+#form-email,
+#suggestion-text-area {
+  margin-bottom: 3%;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+  padding: 0.1em 0.5em;
+}
+#form-name,
+#form-email {
+  height: 2em;
+}
+
+.about-form label {
+  color: white;
+  font-size: 20px;
+}
+
+#submit-button {
+  margin-top: 0.25em;
+  margin-left: 28%;
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  width: 5em;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 0.15em;
+  padding-right: 0.1em;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+#submit-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}

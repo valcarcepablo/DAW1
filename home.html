@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DAW1 Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./home_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50f6e1a0fd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./img/logo.jpg" width="70" height="70">
+            <ul class="main-nav">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="./books.html">Books</a></li>
+                <li><a class="nav-link" href="./about.html">About</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li>
+                    <form>
+                        <input type="text" size="40" id="fname" placeholder="Search by title, genre or author" />
+                        <input type="image" src="./img/search-solid.svg" width="13" height="13" alt="Submit" />
+                    </form>
+                </li>
+                <li><a class="nav-link" href="./log_in-sign_up.html">Log in/Sign up</a></li>
+            </ul>
+        </nav>
+        <div class="title-container">
+            <p>Bestsellers</p>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="carousel-container">
+            <i class="fas fa-angle-right" id="nextBtn"></i>
+            <i class="fas fa-angle-left" id="prevBtn"></i>
+            <div class="carousel-slide">
+                <img src="./img/books/un sonido atronador.jpg" class="carousel-item" id="lastClone" width="250px"
+                    height="400px">
+                <img src="./img/books/asimov.jpg" width="250px" height="400px">
+                <a href="./book.html">
+                    <img src="./img/books/la-sombra-del-viento.jpg" width="250px" height="400px">
+                </a>
+                <img src="./img/books/despertar_leviatan.jpg" width="250px" height="400px">
+                <img src="./img/books/frontera_oscura.jpg" width="250px" height="400px">
+                <img src="./img/books/la historia de tu vida.jpg" width="250px" height="400px">
+                <img src="./img/books/metro.jpg" width="250px" height="400px">
+                <img src="./img/books/91TKzvwTVjL.jpg" width="250px" height="400px">
+                <img src="./img/books/san petesburgo.jpg" width="250px" height="400px">
+                <img src="./img/books/starwars.jpg" width="250px" height="400px">
+                <img src="./img/books/un sonido atronador.jpg" width="250px" height="400px">
+                <img src="./img/books/asimov.jpg" id="firstClone" width="250px" height="400px">
+                <img src="./img/books/despertar_leviatan.jpg" width="250px" height="400px">
+                <img src="./img/books/frontera_oscura.jpg" width="250px" height="400px">
+                <img src="./img/books/la historia de tu vida.jpg" width="250px" height="400px">
+            </div>
+        </div>
+    </div>
+    <script src="./carousel_4.js"></script>
+</body>
+
+</html>

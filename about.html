@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DAW1 Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./about_style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="./img/logo.jpg" width="70" height="70">
+            </div>
+            <ul class="main-nav">
+                <li><a class="nav-link" href="./home.html">Home</a></li>
+                <li><a class="nav-link" href="./books.html">Books</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li>
+                    <form>
+                        <input type="text" size="40" id="fname" placeholder="Search by title, genre or author" />
+                        <input type="image" src="./img/search-solid.svg" width="13" height="13" alt="Submit" />
+                    </form>
+                </li>
+                <li><a class="nav-link" href="./log_in-sign_up.html">Log in/Sign up</a></li>
+            </ul>
+        </nav>
+        <div class="title-container">
+            <p class="title">About us</p>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="about-text">
+                <div class="top-img">
+                    <img src="./img/winrar_logo.png" width="150px" height="150px">
+                </div>
+                <div class="left-text">
+                    <br><br>
+                    <p>Hello, we are Micael, Pablo and José Luis.<br><br><br><br>
+                        Welcome to our new online book store!<br>
+                    </p>
+                </div>
+                <div class="right-text">
+                    <p>If you wish to make any suggestions or complains feel free to fill the form
+                        and we will be very happy
+                        to attend you as soon as possible.<br><br>
+                        We hope you get a wonderful book shopping experience!
+                    </p>
+                </div>
+            </div>
+            <div class="about-form">
+                <form>
+                    <label for="form-name">Name</label><br>
+                    <input type="text" size="40" id="form-name" /><br>
+                    <label for="form-email">Email</label><br>
+                    <input type="text" size="40" id="form-email" /><br>
+                    <label for="form-suggestion">Suggestions</label><br>
+                    <textarea id="suggestion-text-area" name="suggestion-text-area" rows="12" cols="31"></textarea><br>
+                    <input type="submit" value="Submit" id="submit-button">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

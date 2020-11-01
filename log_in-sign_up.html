@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DAW1 Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./log_in-sign_up_style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="./img/logo.jpg" width="70" height="70">
+            </div>
+            <ul class="main-nav">
+                <li><a class="nav-link" href="./home.html">Home</a></li>
+                <li><a class="nav-link" href="./books.html">Books</a></li>
+                <li><a class="nav-link" href="./about.html">About</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li>
+                    <form>
+                        <input type="text" size="40" id="fname" placeholder="Search by title, genre or author" />
+                        <input type="image" src="./img/search-solid.svg" width="13" height="13" alt="Submit" />
+                    </form>
+                </li>
+                <li><a class="nav-link" href="#">Log in/Sign up</a></li>
+            </ul>
+        </nav>
+        <div class="title-container">
+            <p class="title">Log In - Sign Up</p>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="log-in">
+                <div class="log-in-container">
+                    <form>
+                        <label for="log-email">Email</label><br>
+                        <input type="text" size="40" id="log-email" /><br>
+                        <label for="log-password">Password</label><br>
+                        <input type="password" size="40" id="log-password" /><br>
+                        <input type="submit" value="Log in" id="log-in-button">
+                    </form>
+                </div>
+            </div>
+            <div class="sign-up">
+                <div class="sign-up-container">
+                    <form>
+                        <label for="sign-name">Name</label><br>
+                        <input type="text" size="40" id="sign-name" /><br>
+                        <label for="sign-email">Email</label><br>
+                        <input type="text" size="40" id="sign-email" /><br>
+                        <label for="sign-password">Password</label><br>
+                        <input type="password" size="40" id="sign-password" /><br>
+                        <input type="submit" value="Sign up" id="sign-up-button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
