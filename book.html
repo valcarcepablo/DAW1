@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>DAW1 Library</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./book_style.css" />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap"
@@ -12,55 +14,115 @@
     <script src="https://kit.fontawesome.com/50f6e1a0fd.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="text-center">
     <header>
-        <nav>
-            <div class="logo-container">
-                <img src="./img/logo.jpg" width="70" height="70" />
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-or">
+            <a class="navbar-brand">
+                <img class="d-block img-fluid" src="./img/logo.jpg" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto" id="leftNavbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./books.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto" id="rightNavbar">
+                    <form class="form-inline d-flex justify-content-center">
+                        <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <input type="image" src="./img/search-solid.svg" width="13" height="13" alt="Submit" />
+                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./log_in-sign_up.html">Log In/Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profile.html">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./shopping_basket.html">
+                            <i class="fas fa-shopping-basket"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="main-nav">
-                <li><a class="nav-link" href="./home.html">Home</a></li>
-                <li><a class="nav-link" href="./books.html">Books</a></li>
-                <li><a class="nav-link" href="./about.html">About</a></li>
-            </ul>
-            <ul class="right-nav">
-                <form>
-                    <input type="text" size="40" id="fname" placeholder="Search by title, genre or author" />
-                    <input type="image" src="./img/search-solid.svg" width="13" height="13" alt="Submit" />
-                </form>
-                <li><a class="nav-link" href="./log_in-sign_up.html">Log in/Sign up</a></li>
-            </ul>
         </nav>
-        <div class="title-container-2">
-            <p class="title">The Shadow of the Wind</p>
-        </div>
+
     </header>
-    <main>
-        <div class="wrapper">
-            <i class="fas fa-angle-left" id="prevBtn"></i>
-            <i class="fas fa-angle-right" id="nextBtn"></i>
-            <div class="book">
-                <img src="./img/books/la-sombra-del-viento.jpg" class="carousel-item" />
+
+    <main class="cover-container w-100 h-100">
+        <div class="row h-100 no-gutters align-items-center">
+            <div class="col-1" id="left-button">
+                <a class="carousel-control-prev" id="carousel-control-prev-or" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
             </div>
-            <div class="summary_frame">
-                <article>
-                    <p id="autor">Author: Carlos Ruiz Zafón</p>
-                    <p><b>Publication date:</b> 2001</p>
-                    <p><b>Genre:</b> Mystery</p>
-                    <p><b>Plot summary:</b></p>
-                    <p>
-                        Barcelona, 1945: A city slowly heals in the aftermath of the Spanish Civil War, and Daniel, an
-                        antiquarian book dealer’s son who mourns the loss of his mother, finds solace in a mysterious
-                        book entitled The Shadow of the Wind, by one Julián Carax. But when he sets out to find the
-                        author’s other works, he makes a shocking discovery: someone has been systematically destroying
-                        every copy of every book Carax has written. In fact, Daniel may have the last of Carax’s books
-                        in existence. Soon Daniel’s seemingly innocent quest opens a door into one of Barcelona’s
-                        darkest secrets--an epic story of murder, madness, and doomed love.</p>
-                    <p><b>Price:</b><b> &#8734</b></p>
-                </article>
+            <div class="col-3">
+                <div class="row h-50 no-gutters" id="cover">
+
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-6">
+                <div class="card text-white text-center w-100">
+                    <div class="card-header" id="title">
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col" id="author">
+
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col" id="date">
+
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col" id="genre">
+
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col" id="plot_summary">
+
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col" id="price">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <a class="carousel-control-next" id="carousel-control-next-or" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="book_jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

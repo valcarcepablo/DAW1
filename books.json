@@ -1,0 +1,85 @@
+{
+    "items": [
+        {
+            "title" : "La Puerta de Los Tres Cerrojos",
+            "author" : "Sonia Fernández-Vidal",
+            "price" : "15",
+            "genre" : "fiction",
+            "date" : "2011",
+            "plot_summary" : "Nico Mir, un chico solitario de catorce años, no se imagina las consecuencias que le acarreará no seguir el camino que cada día recorre para llegar al instituto. Al variar su ruta, descubre una casa que nunca antes había visto. Atraído por el misterio, se adentrará en ella y se verá inmerso en un extraño universo. Dentro del Mundo Cuántico ocurren cosas sorprendentes, desde una guerra entre la materia y la antimateria hasta las desapariciones del gato de Schrodinger, pasando por un taller de relojería donde se pone a prueba la relatividad del tiempo. Inmerso en esta aventura inesperada, Niko tiene la misión de devolver el equilibrio, ahora en peligro, entre su mundo y el universo cuántico que acaba de descubrir.",
+            "img" : "./img/books/la_puerta_de_los_tres_cerrojos.jpg"
+        },
+        {
+            "title" : "Triología de la Fundación",
+            "author" : "Isaac Asimov",
+            "price" : "20",
+            "genre" : "science-fiction",
+            "date" : "26 november 2010",
+            "plot_summary" : "asdfasd",
+            "img" : "./img/books/triologia_fundacion.jpg"
+        },
+        {
+            "title" : "La Sombra del Viento",
+            "author" : "Carlos Ruiz Zafón",
+            "price" : "18",
+            "genre" : "Suspense",
+            "date" : "2001",
+            "plot_summary" : "Un amanecer de 1945, un muchacho es conducido por su padre a un misterioso lugar oculto en el corazón de la ciudad vieja: el Cementerio de los Libros Olvidados. Allí, Daniel Sempere encuentra un libro maldito que cambia el rumbo de su vida y le arrastra a un laberinto de intrigas y secretos enterrados en el alma oscura de la ciudad. La Sombra del Viento es un misterio literario ambientado en la Barcelona de la primera mitad del siglo xx, desde los últimos esplendores del Modernismo hasta las tinieblas de la posguerra.",
+            "img" : "./img/books/la-sombra-del-viento.jpg"
+        },
+        {
+            "title" : "Metro 2033",
+            "author" : "Dmitri Glujovski",
+            "price" : "30",
+            "genre" : "Science fiction",
+            "date" : "2005",
+            "plot_summary" : "Estamos en el año 2033. Tras una guerra devastadora, amplias zonas del mundo han quedado sepultadas bajo escombros y cenizas. También Moscú se ha transformado en una ciudad fantasma. Los supervivientes se han refugiado bajo tierra, en la red de metro, y han creado allí una nueva civilización. Una civilización diferente de todas las que habían existido con anterioridad.",
+            "img" : "./img/books/metro-2033.jpg"
+        },
+        {
+            "title" : "Metro 2034",
+            "author" : "Dmitri Glujovski",
+            "price" : "30",
+            "genre" : "Science fiction",
+            "date" : "2005",
+            "plot_summary" : "Estamos en el año 2033. Tras una guerra devastadora, amplias zonas del mundo han quedado sepultadas bajo escombros y cenizas. También Moscú se ha transformado en una ciudad fantasma. Los supervivientes se han refugiado bajo tierra, en la red de metro, y han creado allí una nueva civilización. Una civilización diferente de todas las que habían existido con anterioridad.",
+            "img" : "./img/books/metro.jpg"
+        },
+        {
+            "title" : "Starwars",
+            "author" : "Dmitri Glujovski",
+            "price" : "30",
+            "genre" : "Science fiction",
+            "date" : "2005",
+            "plot_summary" : "Estamos en el año 2033. Tras una guerra devastadora, amplias zonas del mundo han quedado sepultadas bajo escombros y cenizas. También Moscú se ha transformado en una ciudad fantasma. Los supervivientes se han refugiado bajo tierra, en la red de metro, y han creado allí una nueva civilización. Una civilización diferente de todas las que habían existido con anterioridad.",
+            "img" : "./img/books/starwars.jpg"
+        },
+        {
+            "title" : "Frontera Oscura",
+            "author" : "Dmitri Glujovski",
+            "price" : "30",
+            "genre" : "Science fiction",
+            "date" : "2005",
+            "plot_summary" : "Estamos en el año 2033. Tras una guerra devastadora, amplias zonas del mundo han quedado sepultadas bajo escombros y cenizas. También Moscú se ha transformado en una ciudad fantasma. Los supervivientes se han refugiado bajo tierra, en la red de metro, y han creado allí una nueva civilización. Una civilización diferente de todas las que habían existido con anterioridad.",
+            "img" : "./img/books/frontera_oscura.jpg"
+        },
+        {
+            "title" : "El Despertar del Leviatán",
+            "author" : "Dmitri Glujovski",
+            "price" : "30",
+            "genre" : "Science fiction",
+            "date" : "2005",
+            "plot_summary" : "Estamos en el año 2033. Tras una guerra devastadora, amplias zonas del mundo han quedado sepultadas bajo escombros y cenizas. También Moscú se ha transformado en una ciudad fantasma. Los supervivientes se han refugiado bajo tierra, en la red de metro, y han creado allí una nueva civilización. Una civilización diferente de todas las que habían existido con anterioridad.",
+            "img" : "./img/books/despertar_leviatan.jpg"
+        },
+        {
+            "title" : "Un Sonido Atronador",
+            "author" : "Dmitri Glujovski",
+            "price" : "30",
+            "genre" : "Science fiction",
+            "date" : "2005",
+            "plot_summary" : "Estamos en el año 2033. Tras una guerra devastadora, amplias zonas del mundo han quedado sepultadas bajo escombros y cenizas. También Moscú se ha transformado en una ciudad fantasma. Los supervivientes se han refugiado bajo tierra, en la red de metro, y han creado allí una nueva civilización. Una civilización diferente de todas las que habían existido con anterioridad.",
+            "img" : "./img/books/un sonido atronador.jpg"
+        }
+    ]
+}

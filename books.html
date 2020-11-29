@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>DAW1 Library</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./books_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap"
@@ -12,88 +14,122 @@
     <script src="https://kit.fontawesome.com/50f6e1a0fd.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="text-center">
     <header>
-        <nav>
-            <img src="./img/logo.jpg" width="70" height="70">
-            <ul class="main-nav">
-                <li><a class="nav-link" href="./home.html">Home</a></li>
-                <li><a class="nav-link" href="#">Books</a></li>
-                <li><a class="nav-link" href="./about.html">About</a></li>
-            </ul>
-            <ul class="right-nav">
-                <li>
-                    <form>
-                        <input type="text" size="40" id="fname" placeholder="Search by title, genre or author" />
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-or">
+            <a class="navbar-brand">
+                <img class="d-block img-fluid" src="./img/logo.jpg" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto" id="leftNavbar">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./books.html">Books<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto" id="rightNavbar">
+                    <form class="form-inline d-flex justify-content-center">
+                        <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search"
+                            aria-label="Search">
                         <input type="image" src="./img/search-solid.svg" width="13" height="13" alt="Submit" />
                     </form>
-                </li>
-                <li><a class="nav-link" href="./log_in-sign_up.html">Log in/Sign up</a></li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./log_in-sign_up.html">Log In/Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profile.html">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./shopping_basket.html">
+                            <i class="fas fa-shopping-basket"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <div class="title-container">
-            <p>Categories</p>
-        </div>
+
     </header>
-    <div class="wrapper">
-        <div class="filter">
-            <ul class="filter-categories">
-                <li><a href="#">Fantasy</a></li>
-                <li><a href="#">Horror</a></li>
-                <li><a href="#">Mystery</a></li>
-                <li><a href="#">Sci-Fi</a></li>
-                <li><a href="#">Science</a></li>
-                <li><a href="#">Police</a></li>
-                <li><a href="#">Fantasy</a></li>
-                <li><a href="#">Thriller</a></li>
-                <li><a href="#">Romance</a></li>
-                <li><a href="#">Dystopian</a></li>
-            </ul>
-        </div>
-        <i class="fas fa-angle-right" id="nextBtn"></i>
-        <i class="fas fa-angle-left" id="prevBtn"></i>
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <img src="./img/books/un sonido atronador.jpg" id="lastClone" width="200" height="300">
-                <img src="./img/books/asimov.jpg" width="200" height="300">
-                <a href="./book.html">
-                    <img src="./img/books/la-sombra-del-viento.jpg" width="200" height="300">
-                </a>
-                <img src="./img/books/despertar_leviatan.jpg" width="200" height="300">
-                <img src="./img/books/frontera_oscura.jpg" width="200" height="300">
-                <img src="./img/books/metro-2033.jpg" width="200" height="300">
-                <img src="./img/books/la historia de tu vida.jpg" width="200" height="300">
-                <img src="./img/books/91TKzvwTVjL.jpg" width="200" height="300">
-                <img src="./img/books/san petesburgo.jpg" width="200" height="300">
-                <img src="./img/books/starwars.jpg" width="200" height="300">
-                <img src="./img/books/un sonido atronador.jpg" width="200" height="300">
-                <img src="./img/books/asimov.jpg" id="firstClone" width="200" height="300">
-                <img src="./img/books/despertar_leviatan.jpg" width="200" height="300">
-                <img src="./img/books/frontera_oscura.jpg" width="200" height="300">
-                <img src="./img/books/la historia de tu vida.jpg" width="200" height="300">
+
+    <div class="container-fluid w-100 h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-2 no-gutters">
+                <div class="row no-gutters justify-content-center">
+                    <div class="card bg-secondary text-white" style="min-width: 8rem; width: 9rem;">
+                        <div class=" card-header">
+                            Filter
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check text-left ml-2">
+                                <input class="form-check-input mt-2" type="radio" name="gridRadios" id="gridRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label mb-2" for="gridRadios1">Fantasy</label>
+                            </div>
+
+                            <div class="form-check text-left ml-2">
+                                <input class="form-check-input mt-2" type="radio" name="gridRadios" id="gridRadios2"
+                                    value="option2">
+                                <label class="form-check-label mb-2" for="gridRadios2">Horror</label>
+                            </div>
+
+                            <div class="form-check text-left ml-2">
+                                <input class="form-check-input mt-2" type="radio" name="gridRadios" id="gridRadios3"
+                                    value="option3">
+                                <label class="form-check-label mb-2" for="gridRadios3">Mystery</label>
+                            </div>
+                            <div class="form-check text-left ml-2">
+                                <input class="form-check-input mt-2" type="radio" name="gridRadios" id="gridRadios4"
+                                    value="option4">
+                                <label class="form-check-label mb-2" for="gridRadios4">Sci-Fi</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-slide-2">
-                <img src="./img/books/un sonido atronador.jpg" id="lastClone" width="200" height="300">
-                <img src="./img/books/asimov.jpg" width="200" height="300">
-                <a href="./book.html">
-                    <img src="./img/books/la-sombra-del-viento.jpg" width="200" height="300">
-                </a>
-                <img src="./img/books/despertar_leviatan.jpg" width="200" height="300">
-                <img src="./img/books/frontera_oscura.jpg" width="200" height="300">
-                <img src="./img/books/metro-2033.jpg" width="200" height="300">
-                <img src="./img/books/la historia de tu vida.jpg" width="200" height="300">
-                <img src="./img/books/91TKzvwTVjL.jpg" width="200" height="300">
-                <img src="./img/books/san petesburgo.jpg" width="200" height="300">
-                <img src="./img/books/starwars.jpg" width="200" height="300">
-                <img src="./img/books/un sonido atronador.jpg" width="200" height="300">
-                <img src="./img/books/asimov.jpg" id="firstClone" width="200" height="300">
-                <img src="./img/books/despertar_leviatan.jpg" width="200" height="300">
-                <img src="./img/books/frontera_oscura.jpg" width="200" height="300">
-                <img src="./img/books/la historia de tu vida.jpg" width="200" height="300">
+            <div class="col-10 h-100">
+                <div class="row h-100 w-100 pt-5 mr-5 no-gutters align-items-center">
+                    <div class="col mr-5" id="left-button">
+                        <a class="carousel-control-prev" id="carousel-control-prev-or" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </div>
+                    <div class="col-9 mt-1 mr-5">
+                        <div class="row h-40 w-80 ml-3" id="row-carousel-top">
+
+                        </div>
+                        <div class="row h-40 w-80 ml-3" id="row-carousel-bot">
+
+                        </div>
+                    </div>
+                    <div class="col mr-5">
+                        <a class="carousel-control-next" id="carousel-control-next-or" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+
+
     </div>
-    <script src="./carousel_8.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="books_jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

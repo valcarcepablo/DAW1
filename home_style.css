@@ -1,43 +1,9 @@
-.carousel-container {
-  width: 60%;
-  height: 50em;
-  margin: auto;
-  overflow: hidden;
+.carousel.carousel img {
+  width: 90%;
+  height: 90%;
 }
 
-.carousel-slide {
-  margin-top: 12em;
+#carousel-control-prev-or,
+#carousel-control-next-or {
   width: 100%;
-  display: flex;
-}
-
-.carousel-slide img {
-  margin-left: 0.1em;
-  margin-right: 2.4em;
-}
-
-#nextBtn,
-#prevBtn {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  cursor: pointer;
-  font-size: 50px;
-  color: #000000;
-  transition: 0.4;
-}
-
-#prevBtn {
-  float: left;
-  left: 15%;
-}
-
-#nextBtn {
-  float: right;
-  right: 15%;
-}
-
-#prevBtn:hover,
-#nextBtn:hover {
-  font-size: 65px;
 }
